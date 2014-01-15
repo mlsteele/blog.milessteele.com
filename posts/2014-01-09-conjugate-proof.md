@@ -1,9 +1,7 @@
 ---
-title: Conjugate Proof
+title: Complex Conjugate Proof
 author: Miles Steele
 ---
-
-# Conjugate Proof
 
 We will set out to prove the equation\
   `(a - b)* = a* - b*`\
