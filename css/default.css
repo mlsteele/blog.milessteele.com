@@ -1,9 +1,11 @@
 body {
-    color: black;
+    color: #222;
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
     margin: 0px auto 0px auto;
     max-width: 800px;
     padding: 0 40px;
+    line-height: 1.5em;
 }
 
 div#header {

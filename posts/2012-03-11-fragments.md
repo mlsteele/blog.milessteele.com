@@ -1,5 +1,5 @@
 ---
-title: Fragments
+title: Fragments - Short Story
 author: Miles Steele
 ---
 
