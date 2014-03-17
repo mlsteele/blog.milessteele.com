@@ -17,6 +17,7 @@ def find_distances(list_of_points):
     for point_a in list_of_points:
         for point_b in list_of_points:
             results.append(distance_between(point_a, point_b))
+    return results
 ~~~
 
 So, the runtime of this is $n^2$.
@@ -36,3 +37,4 @@ that wouldn't change the worst case runtime analysis of this algorithm.
 That leads us to $O(n^2)$. But why stop there?
 $n$ is just a constant too!
 It is reasonable to say that this program is only going to be around for 10 years if we're lucky. And no way will it be pitted against a list of more than say 3,117,536,870,912 elements in that time. Call that the worst case, where n is some constant up there in the millions of millions. Now our algorithm is $O(1)$. That looks much better.
+
