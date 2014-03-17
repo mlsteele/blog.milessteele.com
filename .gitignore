@@ -3,3 +3,5 @@ _site
 *.hi
 *.o
 /site
+
+/.vagrant
