@@ -9,6 +9,8 @@ But no nefariousness had visited the estate in weeks, and Oln shivered from the 
 
 “Damn”, he said aloud. Someone enqueued at the Starbucks with his lone subscriber gave him a funny look. Oln shrugged the appropriate pair of shoulders unapologetically. He set one of his subscribers on vid-screen duty to the task of hunting down new developments on the news nets. The subscriber flicked tabloids out of the way and began excavating oddly compressed political archives from emerging nations. Now he could feel his hearts race with the perilous challenge of guarding the estate from only two sets of eyes.
 
+<div></div><!--more-->
+
 The subscriber attending to the news was alerted by several new posts from LiveConnected Labs, boasting about their latest and greatest software update.
 
 *All the bugs ironed out! No more connection limits, blazingly fast encryption. Share your mind without limits. This theoretical software release has not yet been tested extensively, but for you, our most avid followers of LiveConnected Labs and associated partners, we have included a beta release of the finest distributed mental platform ever to be released for public use. Simply make the standard deposit and you will receive a download link after processing.*

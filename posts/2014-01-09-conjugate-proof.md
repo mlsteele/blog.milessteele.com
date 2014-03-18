@@ -19,6 +19,8 @@ components and teach it how to manipulate the numbers
 in such ways as addition and subtraction by using methods
 on the complex number class.
 
+<div></div><!--more-->
+
 Python actually has support for complex numbers built in.
 This is fantastic, but we are not going to use its built in
 support. The reason is two-fold. First, it is fun to see
