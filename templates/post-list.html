@@ -3,5 +3,12 @@
         <li>
             <a href="$url$">$title$</a> - $date$
         </li>
+        <div>
+          $if(teaser)$
+            $teaser$
+          $else$
+          $endif$
+        </div>
+        <a href="$url$">Read More...</a>
     $endfor$
 </ul>
