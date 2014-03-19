@@ -1,2 +1,9 @@
 Here you can find all my previous posts:
-$partial("templates/post-list.html")$
+
+<ul>
+  $for(posts)$
+    <li>
+      <a href="$url$">$title$</a> - $description$ ($date$)
+    </li>
+  $endfor$
+</ul>
