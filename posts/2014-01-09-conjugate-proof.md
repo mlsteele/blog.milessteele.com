@@ -1,6 +1,7 @@
 ---
 title: Complex Conjugate Proof
 author: Miles Steele
+description: Programming exercise for proving an algebraic formula.
 ---
 
 We will set out to prove the equation\
@@ -12,14 +13,14 @@ is the number which is the same but for a negated imaginary
 component. For examples, the complex conjugate of `4 + 3i`
 is `4 - 3i`.
 
+<div></div><!--more-->
+
 We will do this by exploring through programming.
 First, we will tell python what a complex number is
 by creating a class to store the real and imaginary
 components and teach it how to manipulate the numbers
 in such ways as addition and subtraction by using methods
 on the complex number class.
-
-<div></div><!--more-->
 
 Python actually has support for complex numbers built in.
 This is fantastic, but we are not going to use its built in

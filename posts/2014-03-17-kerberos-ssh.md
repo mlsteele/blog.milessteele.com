@@ -1,6 +1,7 @@
 ---
 title: Using Kerberos Tickets with SSH
 author: Miles Steele
+description: Tutorial for enabling kerberos tickets on Ubuntu.
 ---
 
 ## Athena over SSH

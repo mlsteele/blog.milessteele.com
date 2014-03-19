@@ -1,6 +1,7 @@
 ---
 title: Hiding Django's Secret Key
 author: Miles Steele
+description: Tutorial for securing a secret key with Django.
 ---
 
 Django uses a [secret key](https://docs.djangoproject.com/en/1.5/ref/settings/#std:setting-SECRET_KEY) for many of its security features. This secret key should **not** be checked into version control. There are many ways to factor out the secret key; here's the one I use.

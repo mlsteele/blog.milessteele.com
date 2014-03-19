@@ -1,15 +1,16 @@
 ---
 title: Fragments - Short Story
 author: Miles Steele
+description: A science fiction short story.
 ---
 
 Most of Oln sat in the observatory chairs and watched the vid-screens. Dull rain thudded against concrete below. Mounted security cameras by the door pumped the images up to the observatory where the rain fell again, noiselessly, before his eyes. While three of his subscribers’ attentive eyes scanned the screens, another was dozing on the sofa, and a fifth was out getting coffee for the rest. Oln, as a five-some, was pretty bulky by modern standards, but he felt fine. The Links had been gaining in strength lately. The folks over at LiveConnected Labs had been optimizing away the bandwidth caps that had been limiting people to only three or four subscribers. Oln enjoyed a hefty security-overseer’s salary and, like the rest of the American middle-class, spent almost all of it on the newest Link hardware. He had even managed to get his employer, a slowly rising politician with too much money, to open up a credit line exclusively for his Link maintenance, under the premise that the faster Oln could think, the better he would be as a defense from the nefarious.
 
+<div></div><!--more-->
+
 But no nefariousness had visited the estate in weeks, and Oln shivered from the inescapable stupor of boredom. He flicked the three pairs of eyes watching the screens back and forth, to see if he could shake up the subscribers for a little excitement. He couldn’t, he was too integrated and there was nothing to watch but endless grey rain.
 
 “Damn”, he said aloud. Someone enqueued at the Starbucks with his lone subscriber gave him a funny look. Oln shrugged the appropriate pair of shoulders unapologetically. He set one of his subscribers on vid-screen duty to the task of hunting down new developments on the news nets. The subscriber flicked tabloids out of the way and began excavating oddly compressed political archives from emerging nations. Now he could feel his hearts race with the perilous challenge of guarding the estate from only two sets of eyes.
-
-<div></div><!--more-->
 
 The subscriber attending to the news was alerted by several new posts from LiveConnected Labs, boasting about their latest and greatest software update.
 
