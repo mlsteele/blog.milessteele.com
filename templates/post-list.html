@@ -1,14 +1,21 @@
-<ul>
+<div class="postlist">
   $for(posts)$
-    <li>
-      <a href="$url$">$title$</a> - $date$
+    <article>
+      <h1><a href="$url$">$title$</a></h1>
+      <div class="info">
+        Posted on <time>$date$</time>
+        $if(author)$
+          by $author$
+        $endif$
+      </div>
       $if(teaser)$
-        <div class="teaser">
+        <section class="teaser">
           $teaser$
-        </div>
-        <a href="$url$">Read More...</a>
+        </section>
+        <a href="$url$">Read more...</a>
       $else$
+        <a href="$url$">Read the post...</a>
       $endif$
-    </li>
+    </article>
   $endfor$
-</ul>
+</div class="postlist">

@@ -1,12 +1,17 @@
 body {
-    color: #333;
-    font-size: 16px;
+    color: #444;
+    font-size: 100%;
     font-family: Helvetica, sans-serif;
     margin: 0px auto 0px auto;
-    max-width: 800px;
+    max-width: 900px;
     padding: 0 40px;
     line-height: 1.5em;
 }
+
+a:link    { color: #47e; text-decoration: none; }
+a:visited { color: #47e; text-decoration: none; }
+a:hover   { color: #25c; text-decoration: underline; }
+a:active  { color: #25c; text-decoration: underline; }
 
 div#header {
     border-bottom: 2px solid black;
@@ -45,28 +50,31 @@ div#footer {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2em;
+    color: #C93A95;
+}
+
+h1 a:link, a:visited, a:hover, a:active {
+    color: #C93A95;
+    text-decoration: none;
 }
 
 h2 {
-    font-size: 20px;
+    color: #922069;
+    font-size: 1.4em;
 }
 
 div.info {
-    color: #555;
-    font-size: 14px;
+    color: #999;
+    font-size: 0.8em;
     font-style: italic;
+    margin-top: -15px;
 }
-
-a:link    { color: #47e; text-decoration: none; }
-a:visited { color: #47e; text-decoration: none; }
-a:hover   { color: #25c; text-decoration: underline; }
-a:active  { color: #25c; text-decoration: underline; }
 
 pre, code {
     color #000;
     font-family: monospace;
-    font-size: 0.88em;
+    font-size: 1em;
     border-radius: 3px;
     border: 1px solid #ccc;
     background-color: #f8f8f8;
@@ -85,29 +93,3 @@ pre code {
 code {
     padding: 2px 5px;
 }
-
-/*pre, code {
-  color: #000;
-  font-family: monospace;
-  font-size: 0.88em;
-  border-radius:3px;
-  background-color: #F8F8F8;
-  border: 1px solid #ccc;
-}
-
-pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    padding: 5px 12px;
-}
-
-pre code {
-    border: 0px !important;
-    padding: 0;
-}
-
-code {
-    padding: 0 3px 0 3px;
-}
-*/
