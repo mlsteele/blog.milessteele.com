@@ -8,11 +8,13 @@ author: Miles Steele
 MIT offers ssh access to athena machines from on
 and off campus through `athena.dialup.mit.edu`.
 
-To log in run
+To log in run:
 
     $ ssh username@athena.dialup.mit.edu
 
 replacing `username` with your athena username.
+
+<div></div><!--more-->
 
 But typing in a password for every ssh login is a hassle.
 Normally we would use ssh keypairs but athena does not allow those.
@@ -24,36 +26,33 @@ Kerberos tickets act like temporary ssh keypairs.
 These are instructions on how To set up kerberos tickets for athena on Ubuntu.
 For other flavors of linux, the method should be similar.
 
-First install the necessary kerberos-related packages
+First install the necessary kerberos-related packages:
 
     $ sudo apt-get install krb5-user krb5-config
 
 when prompted for a default realm enter (in all-caps) `ATHENA.MIT.EDU`
 
-<div></div><!--more-->
-
 ## Getting a Ticket
 
 Once the installation is complete it is time to get a ticket.
-To get a ticket run
+To get a ticket run:
 
     $ kinit -p username
 
 replacing `username` is your athena username.
 The default realm should turn this into `username@ATHENA.MIT.EDU`
-If it doesn't try again with
+If it doesn't try again with:
 
     $ kinit -p username@ATHENA.MIT.EDU
 
 You will be prompted for your athena password to get the ticket.
 
-Run 
+To make sure that you received the ticket run:
 
     $ klist
 
-to make sure that you received the ticket
 
-You should get something like this if it worked
+You should get something like this if it worked:
 
     Ticket cache: FILE:/tmp/krb5cc_1000
     Default principal: username@ATHENA.MIT.EDU
@@ -64,7 +63,7 @@ You should get something like this if it worked
 
 ## Using Kerberos with SSH
 
-Now you can use the key to ssh without typing a passwrord
+Now you can use the key to ssh without typing a password:
 
     ssh -K username@athena.dialup.mit.edu
 
@@ -80,7 +79,7 @@ If `~/.ssh/config` doesn't exist yet, go ahead and create it.
 
 Remember to replace `username` with your athena username.
 
-That will enable you to ssh by running
+That will enable you to ssh by running:
 
     $ ssh athena
 
@@ -90,14 +89,13 @@ as `username` and use tickets for authentication.
 ## Renewing Tickets
 
 Note that kerberos tickets will expire. For MIT they expire in about a day.
-You can run
+To renew certificates without entering a password again run:
 
     kinit -R
 
-to renew certificates without entering a password again.
-I'm not sure if that actually works.
+But I'm not sure if that actually works. Sorry.
 
-If you ever lose the ticket altogether, just run
+If you ever lose the ticket altogether, just run:
 
     $ kinit -p username
 
