@@ -24,7 +24,7 @@ Kerberos tickets act like temporary ssh keypairs.
 
 ## Install the Kerberos Client
 
-These are instructions on how To set up kerberos tickets for athena on Ubuntu.
+These are instructions on how to set up kerberos tickets for athena on Ubuntu.
 For other flavors of linux, the method should be similar.
 
 First install the necessary kerberos-related packages:
@@ -40,7 +40,7 @@ To get a ticket run:
 
     $ kinit -p username
 
-replacing `username` is your athena username.
+replacing `username` with your athena username.
 The default realm should turn this into `username@ATHENA.MIT.EDU`
 If it doesn't try again with:
 
