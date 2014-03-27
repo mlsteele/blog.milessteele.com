@@ -4,13 +4,13 @@ author: Miles Steele
 description: Programming exercise for proving an algebraic formula.
 ---
 
-We will set out to prove the equation\
-  `(a - b)* = a* - b*`\
+We will set out to prove the equation
+  `(a - b)* = a* - b*`
 where `*` means complex conjugate.
 
 As a refresher, a complex conjugate of a complex number
 is the number which is the same but for a negated imaginary
-component. For examples, the complex conjugate of `4 + 3i`
+component. For example, the complex conjugate of `4 + 3i`
 is `4 - 3i`.
 
 <div></div><!--more-->
@@ -31,7 +31,7 @@ and ensure the validity of the funny business we will be doing
 later, which will involve shoveling things that are not quite
 numbers through the complex number class machinery.
 
-You can grab a copy of the [python source](proof.py) for this at any point, or
+You can grab a copy of the [python source](https://raw.github.com/mlsteele/conjugate-proof/master/proof.py) for this at any point, or
 clone the [github repository](http://github.com/mlsteele/conjugate-proof).
 
 ``` python
@@ -343,8 +343,9 @@ print (a - b).conj() == a.conj() - b.conj()  # -> True
 
 It's true!
 We have shown that `(a - b)* = a* - b*`.
-But don't take my word for it, you can run this program,
-here is the [python version](proof.py).
+But don't take my word for it, you can run this program yourself.
+
+Here is the [python source](https://raw.github.com/mlsteele/conjugate-proof/master/proof.py).
 
 That's assuming there were no bugs in the program.
 Did you see any bugs? Fix them or play with [the
