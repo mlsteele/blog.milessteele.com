@@ -71,13 +71,5 @@ postCtx =
 --------------------------------------------------------------------------------
 config :: Configuration
 config = defaultConfiguration {
-    deployCommand =
-        "echo '\\033[33m' &&"
-     ++ "echo 'Deploy: building...' && "
-     ++ "echo '\\033[36m' &&"
-     ++ "./site build && "
-     ++ "echo '\\033[33m' &&"
-     ++ "echo 'Deploy: rsyncing...' && "
-     ++ "echo '\\033[36m ' &&"
-     ++ "rsync -aiz --delete _site/ tornado:/home/miles/blog.milessteele.com/"
+    deployCommand = "./deploy"
 }

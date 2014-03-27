@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo -e '\033[33m'
+echo -e 'Deploy: cleaning...'
+echo -e '\033[36m'
+./site clean
+
+echo -e '\033[33m'
+echo -e 'Deploy: building...'
+echo -e '\033[36m '
+./site build
+
+echo -e '\033[33m'
+echo -e 'Deploy: rsyncing...'
+echo -e '\033[36m '
+rsync -aiz --delete _site/ tornado:/home/miles/blog.milessteele.com/
