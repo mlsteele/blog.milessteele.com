@@ -4,7 +4,7 @@ This is my personal blog.
 
 Currently powered by [Hakyll](http://jaspervdj.be/hakyll).
 
-Coming Soon: ~~You can view it online at [blog.milessteele.com](http://blog.milessteele.com)~~
+You can view it online at [blog.milessteele.com](http://blog.milessteele.com)
 
 ## Develop
 
