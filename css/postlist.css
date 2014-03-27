@@ -1,6 +1,8 @@
 .postlist article {
-    border-top: 1px solid #FF88D4;
+    border-top: 1px solid #FFD2EF;
     border-bottom: 1px solid #FFD2EF;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
 }
 
 /*.postlist time {
