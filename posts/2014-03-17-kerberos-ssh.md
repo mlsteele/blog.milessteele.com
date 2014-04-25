@@ -33,6 +33,10 @@ First install the necessary kerberos-related packages:
 
 when prompted for a default realm enter (in all-caps) `ATHENA.MIT.EDU`
 
+If you miss the prompt, that's ok, just run:
+
+    $ sudo dpkg-reconfigure krb5-config
+
 ## Getting a Ticket
 
 Once the installation is complete it is time to get a ticket.
