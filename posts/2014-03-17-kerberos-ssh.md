@@ -6,7 +6,7 @@ description: Tutorial for enabling kerberos tickets on Ubuntu.
 
 ## Athena over SSH
 
-MIT offers ssh access to athena machines from on
+MIT supports ssh access to athena machines from on
 and off campus through `athena.dialup.mit.edu`.
 
 To log in run:
@@ -18,7 +18,7 @@ replacing `username` with your athena username.
 <div></div><!--more-->
 
 But typing in a password for every ssh login is a hassle.
-Normally we would use ssh keypairs but athena does not allow those.
+Normally we would use [ssh keypairs](https://help.github.com/articles/generating-ssh-keys) but athena does not allow those.
 Instead, we must use kerberos tickets.
 Kerberos tickets act like temporary ssh keypairs.
 
@@ -31,7 +31,7 @@ First install the necessary kerberos-related packages:
 
     $ sudo apt-get install krb5-user krb5-config
 
-when prompted for a default realm enter (in all-caps) `ATHENA.MIT.EDU`
+when prompted for a default realm enter (in ALL-CAPS) `ATHENA.MIT.EDU`
 
 If you miss the prompt, that's ok, just run:
 
@@ -98,13 +98,11 @@ To renew certificates without entering a password again run:
 
     kinit -R
 
-But I'm not sure if that actually works. Sorry.
-
-If you ever lose the ticket altogether, just run:
+But that doesn't actually work for me, so you might just have to run:
 
     $ kinit -p username
 
-and enter your athena password to get a new one.
+and enter your athena password to get a new one every once in a while.
 
 
 ## Sources
