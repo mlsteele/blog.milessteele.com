@@ -4,7 +4,7 @@ author: Miles Steele
 description: Tutorial for securing a secret key with Django.
 ---
 
-Django uses a [secret key](https://docs.djangoproject.com/en/1.5/ref/settings/#std:setting-SECRET_KEY) for many of its security features. This secret key should **not** be checked into version control. There are many ways to factor out the secret key; here's the one I use.
+Django uses a [secret key](https://docs.djangoproject.com/en/1.8/ref/settings/#std:setting-SECRET_KEY) for many of its security features. This secret key should **not** be checked into version control. There are many ways to factor out the secret key; here's the one I use.
 
 The secret key entry is stored by default in `settings.py`:
 ``` python
@@ -12,27 +12,32 @@ The secret key entry is stored by default in `settings.py`:
 SECRET_KEY = 'y2k94mib_ve%c9hth=9grurdontuse1(t&his;jy-xkcd'
 ```
 
-From the [Django Docs](https://docs.djangoproject.com/en/1.5/ref/settings/#std:setting-SECRET_KEY):
+From the [Django Docs](https://docs.djangoproject.com/en/1.8/ref/settings/#std:setting-SECRET_KEY):
 
 > Running Django with a known SECRET_KEY defeats many of Django’s security protections, and can lead to privilege escalation and remote code execution vulnerabilities.
 
 In your `settings.py`, replace the `SECRET_KEY` entry with the following block of code. It will look for an existing secret key in and if it does not find one, then it will generate and save one into `secret_key.py` when the settings file is used.
 ``` python
+# SECURITY WARNING: keep the secret key used in production secret!
+import sys 
+
 def find_or_create_secret_key():
-    """
+    """ 
     Look for secret_key.py and return the SECRET_KEY entry in it if the file exists.
     Otherwise, generate a new secret key, save it in secret_key.py, and return the key.
     """
-    SECRET_KEY_FILEPATH = os.path.join(os.path.dirname(__file__), 'secret_key.py')
+    SECRET_KEY_DIR = os.path.dirname(__file__)
+    SECRET_KEY_FILEPATH = os.path.join(SECRET_KEY_DIR, 'secret_key.py') 
+    sys.path.insert(1,SECRET_KEY_DIR) 
 
-    if os.path.isfile(secret_key_filepath):
+    if os.path.isfile(SECRET_KEY_FILEPATH):
         from secret_key import SECRET_KEY
         return SECRET_KEY
     else:
         from django.utils.crypto import get_random_string
         chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&amp;*(-_=+)'
         new_key = get_random_string(50, chars)
-        with file(SECRET_KEY_FILEPATH, 'w') as f:
+        with open(SECRET_KEY_FILEPATH, 'w') as f:
             f.write("# Django secret key\n# Do NOT check this into version control.\n\nSECRET_KEY = '%s'\n" % new_key)
         from secret_key import SECRET_KEY
         return SECRET_KEY
