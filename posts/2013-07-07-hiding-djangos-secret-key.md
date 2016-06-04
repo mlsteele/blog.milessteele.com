@@ -12,6 +12,8 @@ The secret key entry is stored by default in `settings.py`:
 SECRET_KEY = 'y2k94mib_ve%c9hth=9grurdontuse1(t&his;jy-xkcd'
 ```
 
+<div></div><!--more-->
+
 From the [Django Docs](https://docs.djangoproject.com/en/1.8/ref/settings/#std:setting-SECRET_KEY):
 
 > Running Django with a known SECRET_KEY defeats many of Django’s security protections, and can lead to privilege escalation and remote code execution vulnerabilities.
